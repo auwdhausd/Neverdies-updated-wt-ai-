@@ -1,0 +1,54 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MORTEX8/LuaMenu/refs/heads/main/RBLX-Menu"))()
+--the example by ai guys
+
+local MyWindow = Library.NewWindow("Kanka Premium v1", {
+    window_size = Vector2.new(600, 400),
+    scalable = true,
+    exit_func = function()
+        print("Menü kapatıldı!")
+    end
+})
+
+
+local CombatPage = MyWindow.NewPage("Combat")
+local VisualPage = MyWindow.NewPage("Visuals")
+local MiscPage = MyWindow.NewPage("Settings")
+
+
+local AimbotCat = CombatPage.NewCategory("Aimbot Settings")
+local EspCat = VisualPage.NewCategory("Player ESP")
+
+
+
+
+AimbotCat.NewToggle("Enable Aimbot", function(state)
+    print("Aimbot Durumu: ", state)
+end, {default = false})
+
+
+AimbotCat.NewSlider("Aimbot Smoothness", function(value)
+    print("Smoothness ayarlandı: ", value)
+end, {default = 5, min = 1, max = 20, decimals = 1, suffix = " ms"})
+
+
+AimbotCat.NewDropdown("Target Bone", function(selected)
+    print("Hedef kemik: ", selected)
+end, {options = {"Head", "Torso", "HumanoidRootPart"}, default = 1})
+
+
+EspCat.NewColorpicker("ESP Color", function(color)
+    -- 'color' bir Color3 değeridir
+    print("Yeni Renk: ", color)
+end, {default = Color3.fromRGB(255, 0, 0)})
+
+
+AimbotCat.NewKeybind("Aim Key", function()
+    print("Keybind basıldı!")
+end, function(newKey)
+    print("Yeni tuş atandı: ", newKey)
+end, {default = Enum.KeyCode.E})
+
+
+MiscPage.NewButton("Destroy UI", function()
+    MyWindow.Hide() 
+end)
