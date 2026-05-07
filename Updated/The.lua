@@ -77,8 +77,7 @@ Library.NewWindow = function(project_name, ui_info)
     local Avatar_Corner = new("UICorner")
     local Player_Name = new("TextLabel")
     local Freemium_Text = new("TextLabel")
-    local Freemium_Glow = new("TextLabel")
-    local Glow_Stroke = new("UIStroke")
+
 
     Bottom_Bar.Name = "Bottom_Bar"
     Bottom_Bar.Parent = Main_Window
@@ -124,34 +123,11 @@ Library.NewWindow = function(project_name, ui_info)
     Player_Name.TextXAlignment = Enum.TextXAlignment.Left
     Player_Name.ZIndex = 11
 
-    Freemium_Text.Name = "Freemium_Text"
-    Freemium_Text.Parent = Bottom_Bar
-    Freemium_Text.BackgroundTransparency = 1
-    Freemium_Text.Position = u2(1, -110, 0, 0)
-    Freemium_Text.Size = u2(0, 100, 1, 0)
-    Freemium_Text.Font = Enum.Font.GothamBold
-    Freemium_Text.Text = "freemium"
-    Freemium_Text.TextColor3 = RGB(255, 255, 255)
-    Freemium_Text.TextSize = 15
-    Freemium_Text.TextXAlignment = Enum.TextXAlignment.Right
-    Freemium_Text.ZIndex = 12
 
-    Freemium_Glow.Name = "Freemium_Glow"
-    Freemium_Glow.Parent = Freemium_Text
-    Freemium_Glow.BackgroundTransparency = 1
-    Freemium_Glow.Position = u2(0, 0, 0, 0)
-    Freemium_Glow.Size = u2(1, 0, 1, 0)
-    Freemium_Glow.Font = Enum.Font.GothamBold
-    Freemium_Glow.Text = "freemium"
-    Freemium_Glow.TextColor3 = RGB(255, 255, 255)
-    Freemium_Glow.TextSize = 15
-    Freemium_Glow.TextXAlignment = Enum.TextXAlignment.Right
-    Freemium_Glow.ZIndex = 11
 
-    Glow_Stroke.Parent = Freemium_Glow
-    Glow_Stroke.Color = RGB(255, 255, 255)
-    Glow_Stroke.Thickness = 2.5
-    Glow_Stroke.Transparency = 0.6
+
+
+
     -- =========================================
 
     Pages.Name = "Pages"
