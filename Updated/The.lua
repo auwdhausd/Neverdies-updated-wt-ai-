@@ -1,4 +1,4 @@
--- MADE BY Mortex 
+-- MADE BY Mortex
 
 -- LUA FUNCTIONS
 local clamp = math.clamp
@@ -25,7 +25,7 @@ local Players = game:GetService("Players")
 local Player = Players.LocalPlayer
 local Mouse = Player:GetMouse()
 
-local ColorModule = loadstring(game:HttpGet("https://github.com/auwdhausd/Neverdies-updated-wt-ai-/raw/refs/heads/main/Updated/Collor.txt"))()
+local ColorModule = loadstring(game:HttpGet("https://pastebin.com/raw/v0J5ke3N"))()
 
 local function MouseIn(obj)
     if (Mouse.X < obj.AbsolutePosition.X or Mouse.X > obj.AbsolutePosition.X + obj.AbsoluteSize.X) or (Mouse.Y < obj.AbsolutePosition.Y or Mouse.Y > obj.AbsolutePosition.Y + obj.AbsoluteSize.Y) then
@@ -76,8 +76,10 @@ Library.NewWindow = function(project_name, ui_info)
     local Player_Avatar = new("ImageLabel")
     local Avatar_Corner = new("UICorner")
     local Player_Name = new("TextLabel")
-    local Freemium_Text = new("TextLabel")
 
+
+
+    local Glow_Stroke = new("UIStroke")
 
     Bottom_Bar.Name = "Bottom_Bar"
     Bottom_Bar.Parent = Main_Window
@@ -122,8 +124,6 @@ Library.NewWindow = function(project_name, ui_info)
     Player_Name.TextSize = 14
     Player_Name.TextXAlignment = Enum.TextXAlignment.Left
     Player_Name.ZIndex = 11
-
-
 
 
 
