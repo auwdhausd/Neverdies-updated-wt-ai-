@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MORTEX8/LuaMenu/refs/heads/main/RBLX-Menu"))()
+local Library = loadstring(game:HttpGet("https://github.com/auwdhausd/Neverdies-updated-wt-ai-/raw/refs/heads/main/Updated/The.lua"))()
 --the example by ai guys
 
 local MyWindow = Library.NewWindow("Kanka Premium v1", {
