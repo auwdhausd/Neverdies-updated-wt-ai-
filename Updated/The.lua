@@ -1,4 +1,4 @@
--- MADE BY Mortex (Modified by Gemini)
+-- MADE BY Mortex 
 
 -- LUA FUNCTIONS
 local clamp = math.clamp
